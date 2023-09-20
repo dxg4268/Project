@@ -59,8 +59,11 @@ def updateRecord():
             print("Given DocID not found")
 
 
+def searchRecord():
+    import search_record
+    search_record.main()
 
 
 if __name__ == "__main__":
-    updateRecord()
+    searchRecord()
 

@@ -12,7 +12,7 @@ class InputWindow(QWidget):
         self.setWindowTitle("Input Window")
         self.setGeometry(100, 100, 400, 200)
 
-        self.DocID_label = QLabel("Enter DocID:")
+        self.DocID_label = QLabel("Enter DocID Search Criteria:")
         self.DocID_input = QLineEdit()
         self.submit_button = QPushButton("Submit")
 
@@ -27,8 +27,17 @@ class InputWindow(QWidget):
     def _query(self):
         docID = self.DocID_input.text()
         table = "Emp" 
-        q = f"delete from {table} where DocID={docID};"
+        q = f"select * from {table} where DocID={docID};"
 
+        #cr.execute(q)
+        #data = cr.fetchall()
+        #if data:
+            #print("Entry Found!")
+            #print(data)
+        #else:
+            #print("Entry Not found!")
+
+        print(q)
         self.close()  # Close the window after saving the data
 
 def main():
