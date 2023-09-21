@@ -1,6 +1,6 @@
 # test.py
 """
-This whole content is to be appended to the main project file.
+This whole content is to be appended to the main userMGMT file.
 Notes:
     1. addRecord function's prompt just stores the data in csv file and function purpose is to actually execute the query, add codeaccordingly
     2. delRecord just calls the prompt and prompt does everything but code need to be added to it.
